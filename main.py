@@ -13,7 +13,8 @@ b=input('Ievadiet meitenes vardu: ')
 x=b.upper()
 if x in Vardi:
     print(f"Vārds {x} ir sarakstā ")
+    index = Vardi.index(x)
+    index+=1
+    print(f"Vards {x} ir TOP {index}")
 else:
     print("Vārda nav saraksta!")
-index = Vardi.index(x)
-print(f"Vards {x} ir TOP {index}")
